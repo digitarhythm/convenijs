@@ -24,7 +24,7 @@ class conveni
   # debug write
   #===========================================================================
   echo: (a, b...) ->
-    if (node_env == "develop")
+    if (node_env != undefined && node_env == "develop")
       for data in b
         if (typeof(data) == 'object')
           data = JSON.stringify(data)
