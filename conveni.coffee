@@ -76,3 +76,5 @@ class conveni
     for i in [0...num]
       func()
 
+module.exports = new conveni()
+
