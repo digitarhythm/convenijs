@@ -37,8 +37,15 @@ console.log(d); <--- display 'a=hoge, b=foo, c=100'
 Copies an object as an entity.
 
 ```
-arr = {a:'hoge', b:'foo', c:100};
-arr2 = conveniobj.cpObj(arr);
+obj = {a:'hoge', b:'foo', c:100};
+obj2 = conveniobj.cpObj(obj);
+```
+### cpArr
+Copies an array as an entity.
+
+```
+arr = [0, 1, 2, 3, 4];
+arr2 = conveniobj.cpArr(arr);
 ```
 ### toggle
 Passing True returns False, Passing False returns True.
