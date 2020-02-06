@@ -21,7 +21,7 @@ Displays variable-length arguments.
 a = 'hoge';
 b = 'foo';
 c = 100;
-conveniobj.echo('a=%@, b=%@, c=%@", a, b, c);
+conveniobj.echo('a=%@, b=%@, c=%@", a, b, c);  <--- display 'a=hoge, b=foo, c=100'
 ```
 ### sprintf
 The format is the same as echo, but instead of being displayed, it is returned as a string.
@@ -31,7 +31,7 @@ a = 'hoge';
 b = 'foo';
 c = 100;
 d = conveniobj.sprintf('a=%@, b=%@, c=%@", a, b, c);
-console.log(d); <--- display 'a=hoge, b=foo, c=100'
+console.log(d);
 ```
 ### cpObj
 Copies an object as an entity.
