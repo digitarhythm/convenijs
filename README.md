@@ -3,9 +3,9 @@ JavaScript convenience class library.
 
 ## global method
 
-### Array.remove(n)  
-Deletes the element with the specified element number in the array.  
-(Stuff the last element)
+### Array.remove(s, n = 1)  
+Deletes the element with the element number specified by "s" in the array (Stuff the last element).
+The number to be deleted can be specified by "n".
 
 ## conveni class
 
