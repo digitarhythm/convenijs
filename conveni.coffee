@@ -18,13 +18,14 @@ class conveni
   #===========================================================================
   # constructor
   #===========================================================================
-  constructor:->
+  constructor:(node_env='develop')->
+    @node_env = node_env
 
   #===========================================================================
   # debug write
   #===========================================================================
   echo: (a, b...) ->
-    if (typeof(node_env) != 'undefined' && node_env == "develop")
+    if (@node_env == "develop")
       for data in b
         if (typeof(data) == 'object')
           data = JSON.stringify(data)
