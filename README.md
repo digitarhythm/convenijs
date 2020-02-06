@@ -2,12 +2,14 @@
 JavaScript convenience class library.
 
 ## global method
-- Array.remove(n)  
+
+### Array.remove(n)  
 Deletes the element with the specified element number in the array.  
 (Stuff the last element)
 
 ## conveni class
-- Usage  
+
+### Usage  
 conveniobj = new conveni();
 
 ## class method
