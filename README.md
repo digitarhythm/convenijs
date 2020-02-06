@@ -31,7 +31,7 @@ a = 'hoge';
 b = 'foo';
 c = 100;
 d = conveniobj.sprintf('a=%@, b=%@, c=%@", a, b, c);
-console.log(d);
+console.log(d);  <--- display 'a=hoge, b=foo, c=100'
 ```
 ### cpObj
 Copies an object as an entity.
