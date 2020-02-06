@@ -11,8 +11,8 @@
 #
 # remove element from Array
 #=============================================================================
-Array.prototype.remove = (xs) ->
-  @splice(xs, 1)
+Array.prototype.remove = (xs, n = 1) ->
+  @splice(xs, n)
 
 class conveni
   #===========================================================================
