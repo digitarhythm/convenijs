@@ -1,0 +1,10 @@
+#!/usr/bin/env coffee
+
+conveni = require("./conveni.min.js")
+
+day = 18 - 60
+timestr = "2020/02/#{day} 25:34:56"
+conveni.echo(timestr)
+result = conveni.regulartime(timestr)
+conveni.echo(result)
+

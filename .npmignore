@@ -1,3 +1,4 @@
 *.coffee
+test
 package-lock.json
 build
