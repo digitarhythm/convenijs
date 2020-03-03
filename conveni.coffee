@@ -121,5 +121,11 @@ class conveni
 
     return ret
 
+  #=========================================================================
+  # document.getElementById
+  #=========================================================================
+  getElm:(elm)->
+    return document.getElementById(elm)
+
 module.exports = new conveni()
 
