@@ -126,6 +126,6 @@ class conveni
   #=========================================================================
   getElm:(elm)->
     return document.getElementById(elm)
-
-module.exports = new conveni()
+if (module?)
+  module.exports = new conveni()
 
