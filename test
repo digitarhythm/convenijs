@@ -3,8 +3,8 @@
 conveni = require("./conveni.min.js")
 
 day = 18 - 60
-timestr = "2020/02/#{day} 25:34:56"
-conveni.echo(timestr)
-result = conveni.regulartime(timestr)
+a = conveni.sprintf("2020/02/%@ 25:34:56", day)
+
+result = conveni.regulartime(a)
 conveni.echo(result)
 

@@ -27,7 +27,7 @@ class conveni
   echo: (a, b...) ->
     if (@node_env == "develop")
       for data in b
-        if (typeof(data) == 'object')
+        if (Object.prototype.toString.call(data) == "[object Object]")
           data = JSON.stringify(data)
         a = a.replace('%@', data)
       console.log(a)
@@ -37,7 +37,7 @@ class conveni
   #=========================================================================
   sprintf: (a, b...) ->
     for data in b
-      if (typeof(data) == 'object')
+      if (Object.prototype.toString.call(data) == "[object Object]")
         data = JSON.stringify(data)
       match = a.match(/%0\d*@/)
       if (match?)
@@ -62,6 +62,15 @@ class conveni
   #=========================================================================
   cpArr: (a)->
     return a.concat()
+
+  #=========================================================================
+  # copy object auto classification
+  #=========================================================================
+  copy: (a)->
+    if (Object.prototype.toString.call(a) == "[object Array]")
+      return cpArr(a)
+    else if (Object.prototype.toString.call(a) == "[object Object]")
+      return cpObj(a)
 
   #=========================================================================
   # return toggle
@@ -126,6 +135,7 @@ class conveni
   #=========================================================================
   getElm:(elm)->
     return document.getElementById(elm)
+
 if (module?)
   module.exports = new conveni()
 
